@@ -1,3 +1,3 @@
 # User_Interface_NLP
 
-Do a fucking project for no fun.
+Do a fucking project because of fucking nlp course.
