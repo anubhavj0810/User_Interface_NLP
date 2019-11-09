@@ -6,13 +6,13 @@ app = Flask(__name__)
 def mainpage():
     return render_template("mainpage.html")
 
-@app.route("/index")
+@app.route("/index", methods=["GET","POST"])
 def index():
 	return "Hello, world!"
 
-@app.route("/<string:name>")
-def hello(name):
-	return f"Hello, {name}!"
+@app.route("/hello", methods=["POST"])
+def hello():
+	return "Hello"
 
 # @app.route("/graph")
 # def graph():
