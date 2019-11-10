@@ -19,6 +19,8 @@ def index():
 
 # @app.route("/title_show", methods=["GET","POST"])
 # def title_show():
-
+app.config['ENV'] = 'development'
+app.config['DEBUG'] = True
+app.config['TESTING'] = True
 if __name__ == '__main__':
 	app.run(debug=True)
